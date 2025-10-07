@@ -1,53 +1,82 @@
-# 💻 Desafio: Criando uma Máquina Virtual no Microsoft Azure
+# 💻 Desafio DIO: Criando uma Máquina Virtual no Microsoft Azure
 
 ## 📘 Sobre o Desafio
-Este projeto faz parte do laboratório da DIO para consolidar os conhecimentos sobre **Máquinas Virtuais no Azure**.  
-O objetivo foi criar, configurar e documentar uma VM, aplicando na prática os conceitos vistos durante as aulas.
+Este projeto faz parte do **Laboratório de Máquinas Virtuais no Azure**, promovido pela [DIO](https://www.dio.me/).  
+O objetivo é **colocar em prática** os conceitos estudados nas aulas, **criando e configurando uma máquina virtual** no portal do Azure e documentando todo o processo técnico.
+
+---
+
+## 🎯 Objetivos de Aprendizagem
+- Aplicar os conceitos de **criação e gerenciamento de VMs** no Azure;
+- **Documentar** de forma clara e estruturada os processos realizados;
+- Utilizar o **GitHub** para compartilhar a documentação técnica e fortalecer o portfólio profissional.
 
 ---
 
 ## 🚀 Etapas Realizadas
 
-### 1️⃣ Acesso ao Portal do Azure
-- Acesse [portal.azure.com](https://portal.azure.com)
-- Fiz login com minha conta Microsoft.
+### 🟦 1. Acesso ao Portal do Azure
+- Acesse o [Portal do Azure](https://portal.azure.com);
+- Realizei login com minha conta Microsoft e verifiquei os recursos disponíveis.
 
-### 2️⃣ Criação da Máquina Virtual
-- No menu lateral, cliquei em **Máquinas Virtuais → Criar → Máquina Virtual do Azure**;
-- Selecionei:
-  - **Nome:** `vm-desafio-jasson`
-  - **Região:** West US 
-  - **Imagem:** Windows 11 Pro / Windows Server 2022
-  - **Tamanho:** Standard_B1s
-  - **Usuário e senha** configurados conforme boas práticas.
+### 🟩 2. Criação do Grupo de Recursos
+- Criei um grupo de recursos chamado **`rg-desafio-azure`** para organizar os componentes do laboratório.
 
-### 3️⃣ Configurações de Rede e Segurança
-- Criei um **grupo de recursos** chamado `rg-desafio-azure`;
-- Configurei uma **porta RDP (3389)** para acesso remoto;
-- Mantive regras padrão de firewall e rede virtual.
+### 🟨 3. Criação da Máquina Virtual
+- No painel lateral, selecionei:  
+  **Máquinas Virtuais → Criar → Máquina Virtual do Azure**
+- Parâmetros utilizados:
+  - **Nome da VM:** `vm-jasson-lab`
+  - **Região:** (East US)
+  - **Imagem:** Windows 11 Pro
+  - **Tamanho:** Standard_B1s (baixo custo)
+  - **Usuário administrador:** `jassonadmin`
+  - **Autenticação:** senha
+- Configurei as portas de entrada necessárias (RDP 3389) para acesso remoto.
 
-### 4️⃣ Testando o Acesso
-- Baixei o arquivo `.rdp` e conectei via **Área de Trabalho Remota**;
-- A máquina foi inicializada corretamente 🎉.
+### 🟧 4. Configuração de Rede e Segurança
+- Criei uma **rede virtual** padrão;
+- Configurei um **endereço IP público dinâmico**;
+- Mantive as configurações básicas de segurança padrão do Azure.
 
----
+### 🟥 5. Validação e Implantação
+- Revisei todas as configurações e cliquei em **Revisar + Criar**;
+- Após a validação, o recurso foi **implantado com sucesso** 🎉.
 
-## 🧾 Conhecimentos Aplicados
-- Criação e gerenciamento de **máquinas virtuais** no Azure;
-- Configuração de **rede, segurança e credenciais**;
-- Utilização do **Portal do Azure**;
-- Boas práticas de **documentação técnica com Markdown e GitHub**.
-
----
-
-## 🛠️ Tecnologias Utilizadas
-- Microsoft Azure  
-- Windows (VM)  
-- Git & GitHub  
-- Markdown  
+### 🟪 6. Testando o Acesso via RDP
+- Baixei o arquivo `.rdp` gerado pelo Azure;
+- Conectei usando o **usuário e senha configurados**;
+- A máquina virtual inicializou normalmente, confirmando o sucesso da criação.
 
 ---
 
-## 👤 Autor
+## 🧠 Conceitos Aplicados
+- Criação e gerenciamento de **máquinas virtuais no Azure**;  
+- Configuração de **rede, IP e regras de segurança**;  
+- Acesso remoto via **RDP**;  
+- Organização de recursos no **Portal do Azure**;  
+- Documentação técnica utilizando **Markdown** e **GitHub**.
+
+---
+
+## 🧾 Tecnologias Utilizadas
+| Tecnologia | Função |
+|-------------|--------|
+| **Microsoft Azure** | Criação e gerenciamento da VM |
+| **Windows 11 Pro** | Sistema operacional da máquina virtual |
+| **GitHub** | Publicação da documentação |
+| **Markdown** | Formatação do README.md |
+
+---
+
+## 🧑‍💻 Autor
 **Jasson Moreiro**  
-[LinkedIn](https://www.linkedin.com/in/jasson-moreira-9b9b0825a/) | [GitHub](https://github.com/JassonMoreiro)
+📍 Estudante de Engenharia da Computação  
+🚀 Em formação na DIO | Microsoft Azure & .NET  
+🔗 [LinkedIn](https://www.linkedin.com/in/jasson-moreira-9b9b0825a/) | [GitHub](https://github.com/JassonMoreiro)
+
+---
+
+## 🏁 Conclusão
+Este desafio foi uma excelente oportunidade para reforçar o aprendizado sobre **infraestrutura em nuvem**, **gerenciamento de recursos no Azure** e **boas práticas de documentação técnica**.  
+A criação da máquina virtual foi concluída com sucesso, validando todo o processo estudado durante o módulo.
